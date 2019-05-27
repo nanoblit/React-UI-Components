@@ -1,6 +1,6 @@
 import React from "react";
-import "./Card.css";
+import "./Card.less";
 
-const CardContent = ({ content }) => <p>{content}</p>;
+const CardContent = ({ children }) => <p>{children}</p>;
 
 export default CardContent;

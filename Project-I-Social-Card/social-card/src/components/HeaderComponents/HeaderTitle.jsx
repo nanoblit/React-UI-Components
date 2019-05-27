@@ -1,5 +1,5 @@
 import React from "react";
-import "./Header.css";
+import "./Header.less";
 
-const HeaderTitle = ({ title }) => <h1>{title}</h1>;
+const HeaderTitle = ({ children, timestamp }) => <h1>{children} {timestamp}</h1>;
 export default HeaderTitle;

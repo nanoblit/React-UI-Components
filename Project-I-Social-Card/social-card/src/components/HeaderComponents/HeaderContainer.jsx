@@ -2,13 +2,15 @@ import React from "react";
 import ImageThumbnail from "./ImageThumbnail";
 import HeaderTitle from "./HeaderTitle";
 import HeaderContent from "./HeaderContent";
-import "./Header.css";
+import "./Header.less";
 
-const HeaderContainer = ({ image, alt, title, content }) => (
-  <div className="headerContainer">
+const HeaderContainer = ({ image, alt, title, timestamp, children }) => (
+  <div className="header-container">
     <ImageThumbnail image={image} alt={alt} />
-    <HeaderTitle title={title} />
-    <HeaderContent content={content} />
+    <div>
+      <HeaderTitle timestamp={timestamp}>{title}</HeaderTitle>
+      <HeaderContent>{children}</HeaderContent>
+    </div>
   </div>
 );
 

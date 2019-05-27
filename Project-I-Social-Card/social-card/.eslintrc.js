@@ -61,6 +61,7 @@ module.exports = {
     "require-yield": 0,
     "react/no-render-return-value": 0,
     "linebreak-style": 0,
-    "react/no-unescaped-entities": 0
+    "react/no-unescaped-entities": 0,
+    "react/jsx-filename-extension": 0
   },
 };

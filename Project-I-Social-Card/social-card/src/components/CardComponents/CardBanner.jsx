@@ -1,5 +1,5 @@
 import React from "react";
-import "./Card.css";
+import "./Card.less";
 
 const CardBanner = ({ image, alt }) => <img src={image} alt={alt} />;
 

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Header.css";
+import "./Header.less";
 
 const ImageThumbnail = ({ image, alt }) => <img src={image} alt={alt} />;
 

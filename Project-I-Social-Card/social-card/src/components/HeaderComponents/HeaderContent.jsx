@@ -1,5 +1,5 @@
 import React from "react";
-import "./Header.css";
+import "./Header.less";
 
-const HeaderContent = ({ content }) => <p>{content}</p>;
+const HeaderContent = ({ children }) => <p>{children}</p>;
 export default HeaderContent;
