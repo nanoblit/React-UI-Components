@@ -1,4 +1,5 @@
 import React from "react";
+import moment from "moment";
 import HeaderContainer from "./components/HeaderComponents/HeaderContainer";
 import CardContainer from "./components/CardComponents/CardContainer";
 import Footer from "./components/FooterComponents/Footer";
@@ -11,7 +12,7 @@ const App = () => {
         image="https://tk-assets.lambdaschool.com/1c1b7262-cf23-4a9f-90b6-da0d3c74a5c6_lambdacrest.png"
         alt="Lambda School logo"
         title="@LambdaSchool"
-        timestamp="timestamp"
+        timestamp={moment().format('D MMMM')}
       >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget purus porttitor, euismod
         metus nec, ultrices lacus. Donec vitae elit.
