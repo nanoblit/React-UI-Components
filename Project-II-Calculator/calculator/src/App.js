@@ -29,21 +29,21 @@ const App = () => {
         <NumberButton onClick={changeTotal} symbol="/" style={redStyle} />
       </div>
       <div className="row">
-        <NumberButton onClick={changeTotal} symbol="7" style={defaultStyle} />
-        <NumberButton onClick={changeTotal} symbol="8" style={defaultStyle} />
-        <NumberButton onClick={changeTotal} symbol="9" style={defaultStyle} />
+        {[7, 8, 9].map(val => (
+          <NumberButton onClick={changeTotal} symbol={val} style={defaultStyle} />
+        ))}
         <NumberButton onClick={changeTotal} symbol="X" style={redStyle} />
       </div>
       <div className="row">
-        <NumberButton onClick={changeTotal} symbol="4" style={defaultStyle} />
-        <NumberButton onClick={changeTotal} symbol="5" style={defaultStyle} />
-        <NumberButton onClick={changeTotal} symbol="6" style={defaultStyle} />
+        {[4, 5, 6].map(val => (
+          <NumberButton onClick={changeTotal} symbol={val} style={defaultStyle} />
+        ))}
         <NumberButton onClick={changeTotal} symbol="-" style={redStyle} />
       </div>
       <div className="row">
-        <NumberButton onClick={changeTotal} symbol="1" style={defaultStyle} />
-        <NumberButton onClick={changeTotal} symbol="2" style={defaultStyle} />
-        <NumberButton onClick={changeTotal} symbol="3" style={defaultStyle} />
+        {[1, 2, 3].map(val => (
+          <NumberButton onClick={changeTotal} symbol={val} style={defaultStyle} />
+        ))}
         <NumberButton onClick={changeTotal} symbol="+" style={redStyle} />
       </div>
       <div className="row">
