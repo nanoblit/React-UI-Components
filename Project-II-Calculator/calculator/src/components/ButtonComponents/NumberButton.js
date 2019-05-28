@@ -1,2 +1,5 @@
 import React from 'react';
-import './Button.css';
+
+const NumberButton = ({ symbol, style }) => <div style={style}>{symbol}</div>;
+
+export default NumberButton;
