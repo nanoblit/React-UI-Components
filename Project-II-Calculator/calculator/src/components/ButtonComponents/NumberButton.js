@@ -4,14 +4,14 @@ import PropTypes from 'prop-types';
 const NumberButton = ({
   symbol, style, onClick, action,
 }) => {
-  const clickListener = () => {
-    onClick(symbol);
-  };
-
   const setActionClass = () => (action ? 'action-button' : '');
 
   return (
-    <div onClick={clickListener} className={`number-button ${setActionClass()}`} style={style}>
+    <div
+      onClick={() => onClick(symbol)}
+      className={`number-button ${setActionClass()}`}
+      style={style}
+    >
       {symbol}
     </div>
   );
