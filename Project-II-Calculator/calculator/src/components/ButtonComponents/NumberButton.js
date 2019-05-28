@@ -21,7 +21,7 @@ NumberButton.propTypes = {
   symbol: PropTypes.node.isRequired,
   style: PropTypes.object,
   onClick: PropTypes.func.isRequired,
-  action: PropTypes.bool.isRequired,
+  action: PropTypes.bool,
 };
 
 NumberButton.defaultProps = {
@@ -29,6 +29,7 @@ NumberButton.defaultProps = {
     color: 'black',
     backgroundColor: 'white',
   },
+  action: false,
 };
 
 export default NumberButton;

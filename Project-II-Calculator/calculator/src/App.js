@@ -24,19 +24,19 @@ const App = () => {
       </div>
       <div className="row">
         {[7, 8, 9].map(val => (
-          <NumberButton onClick={changeTotal} symbol={val} />
+          <NumberButton key={val} onClick={changeTotal} symbol={val} />
         ))}
         <NumberButton onClick={changeTotal} symbol="X" style={redStyle} />
       </div>
       <div className="row">
         {[4, 5, 6].map(val => (
-          <NumberButton onClick={changeTotal} symbol={val} />
+          <NumberButton key={val} onClick={changeTotal} symbol={val} />
         ))}
         <NumberButton onClick={changeTotal} symbol="-" style={redStyle} />
       </div>
       <div className="row">
         {[1, 2, 3].map(val => (
-          <NumberButton onClick={changeTotal} symbol={val} />
+          <NumberButton key={val} onClick={changeTotal} symbol={val} />
         ))}
         <NumberButton onClick={changeTotal} symbol="+" style={redStyle} />
       </div>
